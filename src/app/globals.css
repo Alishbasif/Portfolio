@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    body{
+        color:#152362;
+        background-color:#8fd1f7;
+    }
+}
+@layer component{
+    .menuLink {
+        @apply cursor-pointer hover:text-[#fff];
+    }
+    .tags{
+        background-color:#0abde3;
+        margin-right:0.5rem;
+        margin-top:0.5rem;
+        padding:3px 10px;
+        display:inline-block;
+        color:white;
+        font-size: 12px;
+    }
+   .tags:last-child{
+    margin-right: 0;
+   }
+}
